@@ -10,16 +10,12 @@ find_package(geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
-
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/BlueROV2State.msg"
 
-  DEPENDENCIES "geometry_msgs" "std_msgs"
-)
+  "srv/SetDepth.srv"
 
-install(
-  DIRECTORY msg
-  DESTINATION share/${PROJECT_NAME}
+  DEPENDENCIES geometry_msgs std_msgs
 )
 
 ament_package()
