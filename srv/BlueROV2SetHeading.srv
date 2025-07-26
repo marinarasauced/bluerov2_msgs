@@ -1,0 +1,10 @@
+# This expresses the request and response to set the target
+# heading of a BlueROV2 using a heading controller.
+#
+# The target heading is described by a single float64 data field,
+# with a standard success bool response and debug string.
+
+float64 target
+---
+bool success
+string message

@@ -13,7 +13,8 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/BlueROV2State.msg"
 
-  "srv/SetDepth.srv"
+  "srv/BlueROV2SetDepth.srv"
+  "srv/BlueROV2SetHeading.srv"
 
   DEPENDENCIES geometry_msgs std_msgs
 )
